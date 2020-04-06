@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    max-width: 1200px;
+    margin: 0px auto;
+    background: url(../img/Kanna.jpg);
+    background-attachment: fixed;
+}
+.header{
+    position: fixed;
+    top: 0%;
+    margin: 0px auto;
+    padding: 8px 0px;
+    width: 1200px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    z-index: 9;
+}
+.dialog{
+    margin-top: 65px;
+    max-width: 1000px;
+    min-height: 600px;
+    padding: 0px 100px;
+    overflow: hidden;
+    background-color: rgba(255,255,192,0.4);
+}
+/* 最恶心的对话框框 */
+.dia{
+    margin: 26px 0px;
+    padding: 26px;
+    font-size: 26px;
+    border-radius: 20px;
+    position: relative;
+    width:fit-content;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    clear: both;
+}
+.dia::after{
+    display: block;
+}
+.dia-right{
+    background-color: rgb(192,192,192);
+    color: black;
+    float: right;
+}
+.dia-left{
+    background-color: rgb(255,215,0);
+    color: black;
+    float: left;
+}
+.dia-left:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 38px;
+    border-top: 10px solid transparent;
+    border-right: 20px solid rgb(255,215,0);
+    border-bottom: 10px solid transparent;
+}
+.dia-right:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 100%;
+    top: 38px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid rgb(192,192,192);
+    border-bottom: 10px solid transparent;
+}
+
+.inputbox{
+    position: fixed;
+    bottom: 0%;
+    margin: 0px auto;
+    width: 1200px;
+    font-size: 32px;
+    text-align: center;
+    background-color: pink;
+    color: white;
+    z-index: 9;
+    border-radius: 40px 40px 0 0 ;
+}
+#inputbox-box{
+    width: 1080px;
+    height: 120px;
+    margin: 40px 50px 0px 50px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: pink;
+    border: 1px dashed white;
+    color: white;
+}
+#inputbox-button{
+    margin: 12px 60px;
+    width: 200px;
+    height: 48px;
+    color: white;
+    background-color: royalblue;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid royalblue;
+    border-radius: 24px;
+    float: right;
+}
+#inputbox-button:hover{
+    background-color: white;
+    color: royalblue;
+}
+#inputbox-help{
+    margin: 12px 60px;
+    width: 200px;
+    height: 48px;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 24px;
+    float: left;
+}
+#inputbox-help:hover{
+    background-color: white;
+    color: gray;
+}

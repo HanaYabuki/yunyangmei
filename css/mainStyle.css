@@ -20,8 +20,23 @@ body{
     top: 30%;
     max-width: 200px;
 }
-.float-right{
+#float-right{
     right: 0%;
+}
+.float-txt{
+    display: block;
+    float: right;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.float-txt p{
+    margin: 0;
+    padding: 0 8px;
+    color: white;
+    font-size: 16px;
+}
+.float-txt:hover{
+    background-color: rgba(0, 0, 0, 1);
 }
 /* top */
 .top{
@@ -32,7 +47,7 @@ body{
 .top p{
     color: white;
     margin: auto 0px;
-    padding: 8px;
+    padding: 7px;
     font-size: 22px;
     font-weight: normal;
     text-align: center;
@@ -48,7 +63,8 @@ body{
 }
 /* A */
 .part-A{
-    background: url(../img/sora.jpg);
+    background: url(../img/Sora.jpg);
+    background-attachment: fixed;
     height: 900px;
 }
 .part-A h1{

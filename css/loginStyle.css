@@ -35,7 +35,6 @@ body{
 }
 .top span{
     position: relative;
-
     top: 9px;
 }
 #top-right{
@@ -87,7 +86,7 @@ body{
     user-select: unset;
 }
 .main-button{
-    margin: 36px 100px;
+    margin: 36px auto;
     border: none;
     width: 200px;
     height: 48px;
@@ -101,6 +100,10 @@ body{
 .main-button:hover{
     background-color: white;
     color: royalblue;
+}
+#btn-bug{
+    width: 300px;
+    margin: 36px auto;
 }
 .main-register{
     text-align: center;
