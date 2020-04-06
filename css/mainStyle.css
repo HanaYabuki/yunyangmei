@@ -63,8 +63,6 @@ body{
 }
 /* A */
 .part-A{
-    background: url(../img/Sora.jpg);
-    background-attachment: fixed;
     height: 900px;
 }
 .part-A h1{
