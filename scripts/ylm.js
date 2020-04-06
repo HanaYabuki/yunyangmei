@@ -9,9 +9,9 @@ function talkRight(idTo,txt) {
 }
 function talkLeft(idTo,txt) {
     tmp = '<div class="dia-left dia">' 
-        + '<pre>'
+        + '<p>'
         + txt
-        + '</pre>'
+        + '</p>'
         + '</div>'
     document.getElementById(idTo).innerHTML += tmp;
     window.scrollBy(0,10000000);

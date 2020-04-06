@@ -9,9 +9,9 @@ function talkRight(idTo,txt) {
 }
 function talkLeft(idTo,txt) {
     tmp = '<div class="dia-left dia">' 
-        + '<pre>'
+        + '<p>'
         + txt
-        + '</pre>'
+        + '</p>'
         + '</div>'
     document.getElementById(idTo).innerHTML += tmp;
     window.scrollBy(0,10000000);
@@ -30,6 +30,10 @@ function talk(idFrom) {
 }
 
 function reply(txtfor){
+    if(txtfor.indexOf("是谁")>=0 || txtfor.indexOf("叫什么")>=0
+    || txtfor.indexOf("叫啥")>=0){
+        return "我叫花枝丸哟！"
+    }
     if(txtfor.indexOf("笨笨")>=0){
         return "你再骂？QAQ"
     }
