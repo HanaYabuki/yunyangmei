@@ -20,13 +20,15 @@ function talkLeft(idTo,txt) {
 function talk(idFrom) {
     tmp = document.getElementById(idFrom);
     txt = tmp.value;
-    tmp.value = ""
-    talkRight("talkBox",txt);
-    
-    setTimeout(
-        'talkLeft("talkBox","喵？")',
-        Math.ceil(Math.random()*500) + 500
-    )
+    if(txt!=""){
+        tmp.value = ""
+        talkRight("talkBox",txt);
+        
+        setTimeout(
+            'talkLeft("talkBox","喵？")',
+            Math.ceil(Math.random()*500) + 500
+        )
+    }
 }
 
 function help() {
