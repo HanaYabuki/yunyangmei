@@ -1,20 +1,25 @@
+tmpid = 0
 function talkRight(idTo,txt) {
-    tmp = '<div class="dia-right dia">' 
+    tmp = '<div class="dia-right dia" id='+(tmpid+"")+'>' 
         + '<pre>'
         + txt
         + '</pre>'
         + '</div>'
     document.getElementById(idTo).innerHTML += tmp;
     window.scrollBy(0,10000000);
+    document.getElementById(tmpid).style.opacity = '1'
+    tmpid += 1;
 }
 function talkLeft(idTo,txt) {
-    tmp = '<div class="dia-left dia">' 
+    tmp = '<div class="dia-left dia" id='+(tmpid+"")+'>'
         + '<p>'
         + txt
         + '</p>'
         + '</div>'
     document.getElementById(idTo).innerHTML += tmp;
     window.scrollBy(0,10000000);
+    document.getElementById(tmpid).style.opacity = '1'
+    tmpid += 1;
 }
 
 function talk(idFrom) {

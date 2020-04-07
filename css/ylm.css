@@ -7,7 +7,9 @@ body{
     max-width: 1200px;
     margin: 0px auto;
     background: url(../img/Kanna.jpg);
+    background-size:100% auto;
     background-attachment: fixed;
+    overflow-y:scroll;
 }
 .header{
     position: fixed;
@@ -39,6 +41,10 @@ body{
     width:fit-content;
     width:-webkit-fit-content;
     width:-moz-fit-content;
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; 
+    opacity: 0.1;
     clear: both;
 }
 .dia::after{
@@ -84,10 +90,10 @@ body{
     width: 1200px;
     font-size: 32px;
     text-align: center;
-    background-color: pink;
+    background-color: #222;
     color: white;
     z-index: 9;
-    border-radius: 40px 40px 0 0 ;
+    border-radius: 20px 20px 0 0 ;
 }
 #inputbox-box{
     width: 1080px;
@@ -95,7 +101,7 @@ body{
     margin: 40px 50px 0px 50px;
     padding: 10px;
     font-size: 24px;
-    background-color: pink;
+    background-color: #222;
     border: 1px dashed white;
     color: white;
 }
@@ -130,4 +136,7 @@ body{
 #inputbox-help:hover{
     background-color: white;
     color: gray;
+}
+#talkStart{
+    opacity: 1;
 }

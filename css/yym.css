@@ -9,6 +9,7 @@ body{
     background: url(../img/rem.jpg) no-repeat;
     background-size:100% auto;
     background-attachment: fixed;
+    overflow-y:scroll;
 }
 .header{
     position: fixed;
@@ -40,6 +41,10 @@ body{
     width:fit-content;
     width:-webkit-fit-content;
     width:-moz-fit-content;
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; 
+    opacity: 0.1;
     clear: both;
 }
 .dia::after{
@@ -85,10 +90,10 @@ body{
     width: 1200px;
     font-size: 32px;
     text-align: center;
-    background-color: royalblue;
+    background-color: #222;
     color: white;
     z-index: 9;
-    border-radius: 40px 40px 0 0 ;
+    border-radius: 20px 20px 0 0 ;
 }
 #inputbox-box{
     width: 1080px;
@@ -96,7 +101,7 @@ body{
     margin: 40px 50px 0px 50px;
     padding: 10px;
     font-size: 24px;
-    background-color: royalblue;
+    background-color: #222;
     border: 1px dashed white;
     color: white;
 }
@@ -105,16 +110,16 @@ body{
     width: 200px;
     height: 48px;
     color: black;
-    background-color: pink;
+    background-color: rgb(183,189,196);
     font-size: 16px;
     text-align: center;
-    border: 1px solid pink;
+    border: 1px solid rgb(183,189,196);
     border-radius: 24px;
     float: right;
 }
 #inputbox-button:hover{
     background-color: black;
-    color: pink;
+    color: rgb(183,189,196);
 }
 #inputbox-help{
     margin: 12px 60px;
@@ -131,4 +136,7 @@ body{
 #inputbox-help:hover{
     background-color: white;
     color: gray;
+}
+#talkStart{
+    opacity: 1;
 }

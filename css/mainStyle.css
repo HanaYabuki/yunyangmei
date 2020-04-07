@@ -71,6 +71,7 @@ body{
     font-size: 120px;
     color: royalblue;
     -webkit-text-stroke:4px pink;
+    text-shadow: 5px 5px 5px #333;
 }
 .part-A h3{
     margin-top: 330px;
@@ -78,12 +79,14 @@ body{
     font-size: 60px;
     color: lightblue;
     -webkit-text-stroke:2px royalblue;
+    text-shadow: 5px 5px 5px #333;
 }
 .part-A h4{
     text-align: center;
     font-size: 50px;
     color: lightblue;
     -webkit-text-stroke:2px royalblue;
+    text-shadow: 5px 5px 5px #333;
 }
 /* B */
 .part-B{
@@ -93,6 +96,7 @@ body{
 .part-B h1{
     font-size: 70px;
     margin-left: 27%;
+    text-shadow: 2px 2px 2px #333;
 }
 .main-img-B{
     margin: 96px auto;
@@ -105,10 +109,12 @@ body{
 .part-B h3{
     font-size: 40px;
     margin-left: 50%;
+    text-shadow: 2px 2px 2px #333;
 }
 .part-B h4{
     font-size: 30px;
     margin-left: 55%;
+    text-shadow: 2px 2px 2px #333;
 }
 
 /* C */
@@ -119,6 +125,7 @@ body{
 .part-C h1{
     font-size: 70px;
     margin-left: 25%;
+    text-shadow: 2px 2px 2px #333;
 }
 .main-img-C{
     margin: 8px auto;
@@ -128,10 +135,12 @@ body{
 .part-C h3{
     font-size: 40px;
     margin-left: 50%;
+    text-shadow: 2px 2px 2px #333;
 }
 .part-C h4{
     font-size: 30px;
     margin-left: 55%;
+    text-shadow: 2px 2px 2px #333;
 }
 
 /* D */
@@ -143,6 +152,7 @@ body{
 .part-D h1{
     font-size: 60px;
     margin-left: 20%;
+    text-shadow: 2px 2px 2px #333;
 }
 .row-D{
     margin-top: 64px;
@@ -165,6 +175,7 @@ body{
     margin: auto;
     text-align: center;
     font-size: 40px;
+    text-shadow: 2px 2px 2px #333;
 }
 
 /* E */
@@ -176,6 +187,7 @@ body{
 .part-E h1{
     font-size: 60px;
     text-align: center;
+    text-shadow: 2px 2px 2px #333;
 }
 .main-img-E{
     margin: 72px auto;
